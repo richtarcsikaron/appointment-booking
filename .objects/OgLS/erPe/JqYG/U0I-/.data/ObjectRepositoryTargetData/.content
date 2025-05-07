@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="zf2qPCK5-0mulW_ymKD7Hg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="onlineorvosok.hu/belepes.php" CVScreenId="6b55ebe6-b6d0-4185-b9ec-e653b3cdb2b7" DesignTimeRectangle="993, 565, 83, 26" DesignTimeScaleFactor="0.800000011920929" ElementType="Button" FullSelectorArgument="&lt;webctrl id='wp-submit' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='wp-submit' tag='INPUT' type='submit' class='button button-primary button-large' aaname='Bejelentkezés' check:text='Bejelentkezés' /&gt;" Guid="96058733-6f92-40ad-9a4f-62002b3a605a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bejelentkezés ‹ OnlineOrvosok — WordPress' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="37ad2ca6853dccdb77c2888c65941ef8.png" xmlns="">0jFCdp6uJCEas7zsAOVOV8g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

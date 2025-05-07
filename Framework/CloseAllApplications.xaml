@@ -1,0 +1,107 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="CloseAllApplications" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="396,292" sap2010:WorkflowViewState.IdRef="CloseAllApplications_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Do the necessary procedures for ending the process (e.g., logout) and close the used applications." DisplayName="Close All Applications" sap:VirtualizedContainerService.HintSize="1276,636" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log message (close applications)" sap:VirtualizedContainerService.HintSize="484,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Closing applications...&quot;]" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Appointments ‹ OnlineOrvosok — WordPre" sap:VirtualizedContainerService.HintSize="484,409" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="9c3559d3-1af4-44d7-8d06-1b7a6e2b21c1" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,169" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NNavigateBrowser Action="CloseTab" DisplayName="Navigate Browser - Close Tab" sap:VirtualizedContainerService.HintSize="416,107" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_2" Version="V4" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAO7SURBVFhHlZe7axRRFMYnja2gfbo0Yq92NhKQYKGVjUE0JjEhvhAbJRYJabQIBNO4CAYD2byUaFZMVESxSCIGBJGYQv0HQrCyGu/v7J7ZO3fOzM4WHzNzZvZ83z2vezfqvt5TGtHgiwPR1ZfHo+Ha7ah/edqh2sC0s49FA8/PuHeHrd/mwTSGEFJIRtb2oqFaLOhfFnRcqNRxabaOK/NxR1/1DWIsXyFMo8IRd8oKr63HCRw5JEfurQqO3Z0XZEQ4RP1Lm4i3fCtMI4iGXvXKigNyVt15azGe+/wzflD7nuDk+EpTRENAU4iLnkufyWMaybFPHAhg5b1TNcHpiSXBiTtPcwUISIshIvUghjxy4AlgxQgYnf1QTgAwRKTJqWKLWNHIPykg7zPrX+Ltnd/x2dFKOQEOpCPFmdy49snkPERDQNeNZ0K68vGr4ObUgtjKCAB+hzQFUCgWqQ9PAOHf2/8bv9/elUh0DTwqL2D49Y6mok5Ou42s/TNJfRgCVjd+tC2Ab+gyX8CYSRjCq4HJlU3JPxFARNkaUDAjmgIIiUUYwgmgCyDRAQRxMojaEAAk8lJ8FlkeVAROIFPiNsmBDLui1rs4sy1T7uj4J8GpqY24++E7uR94UrdByj2zgevB4QWZDVzvL24JuDcFUPiiwiDH4e6vP9JijN1zk+uScxyer2xJ+3HF0duNbyIMG8XJdxQqv5fiDIgVTkA1d/IhAEc4ptAQQNVjg5jCswTwrS+AqITECZiM7QiAABEqgBThyBdAS8rKS0SgLiAnBbQaDgi5poDWgwxiBFAfCPUFMCF9AdgLasClgMOGIYBKxxk1gBgcsgHRdpDqO1qQe95zPXS5klwHJx4LcgUwf4rakFADCFk1XQC0K7DxHgJyjVBWrN3APZGzyIF0oAwiTi4BOc4IKcAJrUXYuZIWSHgm/FQ+6SFCPPMNv+E9NWGRA1l8fRJmCxEB5B4HEOAYEhxTnJDxHoGEn+98AfxGa8gipwC9UZzdigmhrlAjAKEWJ+/pDt5zIEEA32gnqA0flgDdkkWA3BgbEi3E6iAD3FOccnUjWd7TZo29Qb7xbFq8GfLGRpQWwJk/2JS02IpAgbZCRoB3Uk4EyAMt6Z0LtOqLQKW3Qorc1VuK038QQ85gyoXujCXA4MnwhQYxIqLMCQmUFOC+M/8bpB58SDrKHFRaCeir7odh92EaFdKedEdRNIoEsNm4U4/lW2EaQyRCrIiEAlgx4W7xn1BhGovAimSGMz0RpaBuSpI20RP9B/KKEURf30hvAAAAAElFTkSuQmCC" InformativeScreenshot="26fda43e488a6d3fea07e821a055bf2e.jpg" Selector="&lt;html app='msedge.exe' title='Appointments ‹ OnlineOrvosok — WordPress' /&gt;" Title="Bejelentkezés ‹ OnlineOrvosok — WordPress" Url="https://onlineorvosok.hu/orvosok/admin.php?page=wpamelia-appointments#/appointments" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

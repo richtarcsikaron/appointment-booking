@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Nincs találat...",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "qMzKgjbrzEKrZNs2WRdl-Q",
+  "Reference": "wBKoE0xw90CktorGcSwN5g/qMzKgjbrzEKrZNs2WRdl-Q",
+  "ParentRef": "wBKoE0xw90CktorGcSwN5g/RSYBvixd3EesR5xhDK08rA",
+  "Created": "2025-02-20T09:18:49.3558973Z",
+  "Updated": "2025-02-20T09:18:49.3558973Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

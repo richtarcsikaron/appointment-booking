@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1w5iLTtpdEKQFIQHSgaqsw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="onlineorvosok.hu/orvosok/admin.php" DesignTimeRectangle="772, 584, 1108, 40" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='el-pagination' parentid='am-appointments' tag='DIV' type='' aaname='' /&gt;" Guid="d1b90e3b-df3d-449b-96b0-d441768c8b91" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Appointments ‹ OnlineOrvosok — WordPress' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="cca835ee2f793afa1b15ff31d5ff00e1.png" xmlns="">0ZWlUIefkMkO5mbTmiOkrWA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,282 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Test" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Test_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Diagnostics;assembly=System.Diagnostics.Process" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.Process</AssemblyReference>
+      <AssemblyReference>Microsoft.PowerShell.Commands.Diagnostics</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.FileVersionInfo</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.DiagnosticSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TraceSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.EventLog</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.PerformanceCounter</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TextWriterTraceListener</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Test" sap:VirtualizedContainerService.HintSize="1293,786.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="LekérdDátum" />
+      <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="Children" />
+      <Variable x:TypeArguments="sco:Collection(sd:Process)" Name="processes" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:GetProcesses ContinueOnError="{x:Null}" DisplayName="Get Processes" sap:VirtualizedContainerService.HintSize="418,57" sap2010:WorkflowViewState.IdRef="GetProcesses_1" Processes="[processes]" />
+    <ui:ForEach x:TypeArguments="sd:Process" CurrentIndex="{x:Null}" DisplayName="For Each currentProcess" sap:VirtualizedContainerService.HintSize="418,354" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[processes]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="sd:Process">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Process" Name="currentProcess" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,224" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,164" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[currentProcess]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="418,48" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="616,1919" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Edge Appointments ‹ OnlineOrvosok — WordPress" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="582,1859" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="74bebc36-120c-4bff-bba8-75ac0be3bf32" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="548,1619" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="OuterHtml" />
+                    <Variable x:TypeArguments="x:String" Name="Pages">
+                      <Variable.Default>
+                        <Literal x:TypeArguments="x:String">3</Literal>
+                      </Variable.Default>
+                    </Variable>
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="outerHtml" DisplayName="Get Attribute 'Element(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="514,239" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_1" Result="[OuterHtml]" ScopeIdentifier="74bebc36-120c-4bff-bba8-75ac0be3bf32" Version="V4">
+                    <uix:NGetAttributeGeneric.Target>
+                      <uix:TargetAnchorable BrowserURL="onlineorvosok.hu/orvosok/admin.php" CVScreenId="58ef7d4a-ceeb-4802-b110-02b42f1bf982" DesignTimeRectangle="1702, 637, 36, 32" DesignTimeScaleFactor="1" ElementType="ListItem" FullSelectorArgument="[string.Format(&quot;&lt;webctrl parentid='am-appointments' tag='LI' aaname='{0}' /&gt;&quot;, Pages)]" Guid="af0bfb28-488e-4614-a94d-772fbe3e2621" InformativeScreenshot="270b4b10b4e9ed7deddd3d638e417216.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Appointments ‹ OnlineOrvosok — WordPress' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                    </uix:NGetAttributeGeneric.Target>
+                  </uix:NGetAttributeGeneric>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="514,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[OuterHtml]" />
+                  <uix:NForEachUiElement DisplayName="For Each UI Element" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CurrentElement'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='CurrentLabel_1'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='5' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='5' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='i' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='5' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='input' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="514,1143" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="74bebc36-120c-4bff-bba8-75ac0be3bf32" Version="V4">
+                    <uix:NForEachUiElement.Body>
+                      <ActivityAction x:TypeArguments="x:Int32">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,813" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="x:String" Name="ParentID" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[CurrentElement_Label]" />
+                          <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="parentid" DisplayName="Get Attribute '0800'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,219" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_2" InUiElement="[CurrentElement]" Result="[ParentID]" ScopeIdentifier="74bebc36-120c-4bff-bba8-75ac0be3bf32" Version="V4">
+                            <uix:NGetAttributeGeneric.Target>
+                              <uix:TargetAnchorable BrowserURL="onlineorvosok.hu/orvosok/admin.php" CVScreenId="f9757b4d-1fa8-43bd-acb0-c9ea464d850c" DesignTimeRectangle="190, 471, 33, 17" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FuzzyMatches="10000" Guid="dc1ee6ce-e19b-4ef0-866c-a4c0ef477e12" InformativeScreenshot="c4f67dc7384924f729c1389a73e24697.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Appointments ‹ OnlineOrvosok — WordPress' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                            </uix:NGetAttributeGeneric.Target>
+                          </uix:NGetAttributeGeneric>
+                          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'I'" sap:VirtualizedContainerService.HintSize="416,139" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                            <ui:Click.CursorPosition>
+                              <ui:CursorPosition Position="Center">
+                                <ui:CursorPosition.OffsetX>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:CursorPosition.OffsetX>
+                                <ui:CursorPosition.OffsetY>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:CursorPosition.OffsetY>
+                              </ui:CursorPosition>
+                            </ui:Click.CursorPosition>
+                            <ui:Click.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b8e1c7cb-14f2-4b46-9b6b-b54e53cefa25" InformativeScreenshot="483807936ce7931c55f51245d7737061" Selector="[string.Format(&quot;&lt;html app='msedge.exe' title='Appointments ‹ OnlineOrvosok — WordPress' idx='*' /&gt;&lt;webctrl parentid='{0}' tag='I' class='el-select__caret el-input__icon el-icon-arrow-up' isleaf='1' parentclass='el-input__suffix-inner' /&gt;&quot;, ParentID)]">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:Click.Target>
+                          </ui:Click>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Jóváhagyva(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="74bebc36-120c-4bff-bba8-75ac0be3bf32" Version="V4">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="onlineorvosok.hu/orvosok/admin.php" ContentHash="ABJtBdVjaEKVXmQgLSJPLw" DesignTimeRectangle="1600, 608, 75, 17" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Jóváhagyva' type='' class='am-appointment-status-symbol approved' tag='SPAN' check:innerText='Jóváhagyva' /&gt;" Guid="6bba3033-e3ff-431c-9bd9-587c4dfe5c24" InformativeScreenshot="0e991714112971a54be53083b7f1a271.png" Reference="wBKoE0xw90CktorGcSwN5g/8a2ymv7jd0alHAEfcKXtKQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Appointments ‹ OnlineOrvosok — WordPress' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                            <uix:NClick.VerifyOptions>
+                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionOptions.Retry>
+                                <uix:VerifyExecutionOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionOptions.Timeout>
+                              </uix:VerifyExecutionOptions>
+                            </uix:NClick.VerifyOptions>
+                          </uix:NClick>
+                        </Sequence>
+                      </ActivityAction>
+                    </uix:NForEachUiElement.Body>
+                    <uix:NForEachUiElement.Filter>
+                      <uuam:FilterArgument LogicalOperator="And">
+                        <uuam:FilterArgument.Filters>
+                          <scg:List x:TypeArguments="uuam:FilterEntryArgument" Capacity="1">
+                            <uuam:FilterEntryArgument Criterion="Column1" Operator="Contains" Value="Jóváhagyva" />
+                          </scg:List>
+                        </uuam:FilterArgument.Filters>
+                      </uuam:FilterArgument>
+                    </uix:NForEachUiElement.Filter>
+                    <uix:NForEachUiElement.Target>
+                      <uix:TargetAnchorable BrowserURL="https://onlineorvosok.hu/orvosok/admin.php?page=wpamelia-appointments#/appointments" ContentHash="PVli9m3G-EScPcc4e9MyKA" DesignTimeRectangle="194, 180, 1695, 794" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='am-appointments' tag='DIV' /&gt;" Guid="c4081737-3944-43e4-9ee0-5425c47d78b1" InformativeScreenshot="8da2a79d6066395c2c5dc43aadbf23f0.png" Reference="wBKoE0xw90CktorGcSwN5g/UOTWhxhWkUOVst43Q8C1YA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Appointments ‹ OnlineOrvosok — WordPress' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                    </uix:NForEachUiElement.Target>
+                    <uix:NForEachUiElement.Variables>
+                      <Variable x:TypeArguments="ui:UiElement" Name="CurrentElement" />
+                      <Variable x:TypeArguments="x:String" Name="CurrentElement_Label" />
+                      <Variable x:TypeArguments="x:String" Name="CurrentLabel_1" />
+                    </uix:NForEachUiElement.Variables>
+                    <uix:NForEachUiElement.VariablesMetadata>
+                      <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column0" Capacity="4">
+                        <uuam:VariableMetadata Name="CurrentElement" Type="ui:UiElement" />
+                        <uuam:VariableMetadata Name="CurrentElement_Label" Type="x:String" />
+                      </scg:List>
+                      <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column1" Capacity="4">
+                        <uuam:VariableMetadata Name="CurrentLabel_1" Type="x:String" />
+                      </scg:List>
+                    </uix:NForEachUiElement.VariablesMetadata>
+                  </uix:NForEachUiElement>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Edge" ContentHash="Gcg-ivF08Uy1yO8jgs00Ew" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAO7SURBVFhHlZe7axRRFMYnja2gfbo0Yq92NhKQYKGVjUE0JjEhvhAbJRYJabQIBNO4CAYD2byUaFZMVESxSCIGBJGYQv0HQrCyGu/v7J7ZO3fOzM4WHzNzZvZ83z2vezfqvt5TGtHgiwPR1ZfHo+Ha7ah/edqh2sC0s49FA8/PuHeHrd/mwTSGEFJIRtb2oqFaLOhfFnRcqNRxabaOK/NxR1/1DWIsXyFMo8IRd8oKr63HCRw5JEfurQqO3Z0XZEQ4RP1Lm4i3fCtMI4iGXvXKigNyVt15azGe+/wzflD7nuDk+EpTRENAU4iLnkufyWMaybFPHAhg5b1TNcHpiSXBiTtPcwUISIshIvUghjxy4AlgxQgYnf1QTgAwRKTJqWKLWNHIPykg7zPrX+Ltnd/x2dFKOQEOpCPFmdy49snkPERDQNeNZ0K68vGr4ObUgtjKCAB+hzQFUCgWqQ9PAOHf2/8bv9/elUh0DTwqL2D49Y6mok5Ou42s/TNJfRgCVjd+tC2Ab+gyX8CYSRjCq4HJlU3JPxFARNkaUDAjmgIIiUUYwgmgCyDRAQRxMojaEAAk8lJ8FlkeVAROIFPiNsmBDLui1rs4sy1T7uj4J8GpqY24++E7uR94UrdByj2zgevB4QWZDVzvL24JuDcFUPiiwiDH4e6vP9JijN1zk+uScxyer2xJ+3HF0duNbyIMG8XJdxQqv5fiDIgVTkA1d/IhAEc4ptAQQNVjg5jCswTwrS+AqITECZiM7QiAABEqgBThyBdAS8rKS0SgLiAnBbQaDgi5poDWgwxiBFAfCPUFMCF9AdgLasClgMOGIYBKxxk1gBgcsgHRdpDqO1qQe95zPXS5klwHJx4LcgUwf4rakFADCFk1XQC0K7DxHgJyjVBWrN3APZGzyIF0oAwiTi4BOc4IKcAJrUXYuZIWSHgm/FQ+6SFCPPMNv+E9NWGRA1l8fRJmCxEB5B4HEOAYEhxTnJDxHoGEn+98AfxGa8gipwC9UZzdigmhrlAjAKEWJ+/pDt5zIEEA32gnqA0flgDdkkWA3BgbEi3E6iAD3FOccnUjWd7TZo29Qb7xbFq8GfLGRpQWwJk/2JS02IpAgbZCRoB3Uk4EyAMt6Z0LtOqLQKW3Qorc1VuK038QQ85gyoXujCXA4MnwhQYxIqLMCQmUFOC+M/8bpB58SDrKHFRaCeir7odh92EaFdKedEdRNIoEsNm4U4/lW2EaQyRCrIiEAlgx4W7xn1BhGovAimSGMz0RpaBuSpI20RP9B/KKEURf30hvAAAAAElFTkSuQmCC" InformativeScreenshot="c06dacaa2288e61eea38b645f201666b.jpg" Reference="wBKoE0xw90CktorGcSwN5g/RSYBvixd3EesR5xhDK08rA" Selector="&lt;html app='msedge.exe' title='Appointments ‹ OnlineOrvosok — WordPress' /&gt;" Url="https://onlineorvosok.hu/orvosok/admin.php?page=wpamelia-appointments#/appointments" Version="V2" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+  </Sequence>
+</Activity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="ZxbC11dio02ay8lGM_zozg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-8, -8, 2576, 1408" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAExSURBVDhPpVPLTQMxECU1YGPvIu1hbLaA0AWiCiqgg3DhDCUgpYQoByhhUaqIlEOkFbecgDBv7LVDNiERedJoVzPvjT0fn21DXVKtrH9gmyjrFsHwzz6ORdpODFRB9yxYsa332AoccIMkY8DB6Rb5L5tCE6SMePImYaksjbSlG2Xo9rxwj1xC+4sTbtLVnK+tDb2WZa0kuAFj3IUu/FtKAA16EhqWnMtd4g6IgZP5NEICdDs7DgCczPcTdsioxIGaI28vpC8pgVuclsC4jxNLcDMk+H8TjX/qj5FHhZFFTQLEGHESW/etNV1JsL9IvpXl4SUKNcu1u5PnnOiueHHXIo44epUhrhrfVo1bs71HveCYx/RVjv0wimGfUZvRe848Kv7OuKRnY2oCBydDXDU0/gHf/MAXVaXV8gAAAABJRU5ErkJggg==" Selector="&lt;html app='chrome.exe' title='qBittorrent download latest version' /&gt;" Title="qBittorrent download latest version" Url="https://www.fosshub.com/qBittorrent.html?dwl=qbittorrent_5.0.3_x64_setup.exe" Version="V2">
+      <imageRef attrName="InformativeScreenshot" originalValue="7be15b7a5dff14fa4aab588b9ace573b.jpg" xmlns="">0Lu7xI6TRrEuc3BjjSZHMjw</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

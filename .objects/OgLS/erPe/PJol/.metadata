@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Bejelentkezés ‹ OnlineOrvosok — WordPr",
+  "Type": "Screen",
+  "Id": "PJolIq2GdEOqXVWEK1io3w",
+  "Reference": "wBKoE0xw90CktorGcSwN5g/PJolIq2GdEOqXVWEK1io3w",
+  "ParentRef": "wBKoE0xw90CktorGcSwN5g/erPekLM2MkyLrZnchu3-cA",
+  "Created": "2025-02-10T14:30:48.842051Z",
+  "Updated": "2025-02-10T14:30:48.842051Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

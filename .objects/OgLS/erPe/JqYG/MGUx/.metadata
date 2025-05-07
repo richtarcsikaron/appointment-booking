@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Felhasználónév, vagy e-…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "MGUxVWrf20KuAHKgdf_BKg",
+  "Reference": "wBKoE0xw90CktorGcSwN5g/MGUxVWrf20KuAHKgdf_BKg",
+  "ParentRef": "wBKoE0xw90CktorGcSwN5g/JqYG3G6-ckSehmOnpY_Ltg",
+  "Created": "2025-02-10T14:40:37.8052249Z",
+  "Updated": "2025-02-10T14:40:37.8052249Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

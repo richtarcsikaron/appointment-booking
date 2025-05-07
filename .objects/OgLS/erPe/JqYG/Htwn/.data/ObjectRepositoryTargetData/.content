@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="GLl7zUOyf0a9E8lv-8wCrg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="onlineorvosok.hu/orvosok/admin.php" CVScreenId="9aa995d6-893e-4c69-bc6c-b988ff3108b5" DesignTimeRectangle="173, 311, 481, 32" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' class='el-input__inner' idx='2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' class='el-input__inner' type='text' placeholder='YYYY.MM.DD. - YYYY.MM.DD.' aaname='' /&gt;" Guid="206d2f9d-9a3b-49c2-8b05-86438542f42e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Appointments ‹ OnlineOrvosok — WordPress' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="563ebbab9ddfb6ca588e904409a03168.png" xmlns="">0owfso3PGsUSRlJpQX5XeJg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

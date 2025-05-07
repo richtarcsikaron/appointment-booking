@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0jUVQV8Mc0-rvkMWajzelg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="onlineorvosok.hu/orvosok/admin.php" DesignTimeRectangle="210, 696, 1678, 45" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='' aaname='Nincs találat...' check:innerText='Nincs találat...' /&gt;" Guid="45275226-788c-4cc2-b9f9-6c1f2d3c164f" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Appointments ‹ OnlineOrvosok — WordPress' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a5582d4aa9e8179f8c988841c541a649.png" xmlns="">04DVyXtLdDEasVcYcSw5pmw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

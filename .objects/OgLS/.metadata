@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Bejelentkezés ‹ OnlineOrvosok — WordPress",
+  "Type": "App",
+  "Id": "OgLSWcwWJ0qQQJKUPo0WNA",
+  "Reference": "wBKoE0xw90CktorGcSwN5g/OgLSWcwWJ0qQQJKUPo0WNA",
+  "Created": "2025-02-10T14:30:48.7311526Z",
+  "Updated": "2025-02-10T14:30:48.7311526Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

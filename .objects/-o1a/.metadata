@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome qBittorrent download latest version",
+  "Type": "App",
+  "Id": "-o1aixW4eEqLerYsURKw2g",
+  "Reference": "wBKoE0xw90CktorGcSwN5g/-o1aixW4eEqLerYsURKw2g",
+  "Created": "2025-02-13T15:10:51.8177798Z",
+  "Updated": "2025-02-13T15:10:51.8177798Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

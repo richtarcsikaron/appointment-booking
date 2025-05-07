@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="WcpijG55g02ZIJVqSllsjg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="onlineorvosok.hu/orvosok/admin.php" CVScreenId="58ef7d4a-ceeb-4802-b110-02b42f1bf982" DesignTimeRectangle="1702, 637, 36, 32" DesignTimeScaleFactor="1" ElementType="ListItem" FullSelectorArgument="&lt;webctrl isleaf='1' parentid='am-appointments' tag='LI' /&gt;" Guid="af0bfb28-488e-4614-a94d-772fbe3e2621" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Appointments ‹ OnlineOrvosok — WordPress' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="270b4b10b4e9ed7deddd3d638e417216.png" xmlns="">0TNSXIJ-NPkWPFtvcAu6icQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetAttributeGeneric</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

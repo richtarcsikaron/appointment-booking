@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Bejelentkezés",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "U0I-c1tVdU62jqskma2afQ",
+  "Reference": "wBKoE0xw90CktorGcSwN5g/U0I-c1tVdU62jqskma2afQ",
+  "ParentRef": "wBKoE0xw90CktorGcSwN5g/JqYG3G6-ckSehmOnpY_Ltg",
+  "Created": "2025-02-10T14:48:43.3451107Z",
+  "Updated": "2025-02-10T14:48:43.3451107Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

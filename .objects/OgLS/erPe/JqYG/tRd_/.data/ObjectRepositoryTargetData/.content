@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="lsp9UF3iGkqYBPDbCrejgw" Reference="wBKoE0xw90CktorGcSwN5g/tRd_hJXfPUayX1eanUsRVg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="onlineorvosok.hu/orvosok/admin.php" CVScreenId="6281c2c2-272c-4f71-a46d-46c000e4ffc4" DesignTimeRectangle="1578, 463, 195, 32" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBox" FullSelectorArgument="[string.Format(&quot;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='el-collapse-head-{0}' tag='DIV' /&gt;&quot;, ParentID)]" Guid="1db7d4a5-eda6-435c-802f-4043cb62c88f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Appointments ‹ OnlineOrvosok — WordPress' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="880727000544a16ead75e9265b14b212.png" xmlns="">0U4kFDNKxVUihjzyi8CQJGw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="*" Name="ParentID" />
+    </scg:List>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

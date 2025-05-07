@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge Appointments ‹ OnlineOrvosok — WordPress",
+  "Type": "Screen",
+  "Id": "RSYBvixd3EesR5xhDK08rA",
+  "Reference": "wBKoE0xw90CktorGcSwN5g/RSYBvixd3EesR5xhDK08rA",
+  "ParentRef": "wBKoE0xw90CktorGcSwN5g/erPekLM2MkyLrZnchu3-cA",
+  "Created": "2025-02-20T08:17:29.4857573Z",
+  "Updated": "2025-02-20T08:17:29.4857573Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

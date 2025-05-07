@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Jóváhagyva",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "tRd_hJXfPUayX1eanUsRVg",
+  "Reference": "wBKoE0xw90CktorGcSwN5g/tRd_hJXfPUayX1eanUsRVg",
+  "ParentRef": "wBKoE0xw90CktorGcSwN5g/JqYG3G6-ckSehmOnpY_Ltg",
+  "Created": "2025-02-12T14:41:15.3215162Z",
+  "Updated": "2025-02-12T14:42:28.0026938Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

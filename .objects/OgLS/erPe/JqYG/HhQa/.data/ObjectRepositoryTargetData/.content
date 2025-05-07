@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="w0A2JymRy0aHp4wWClvynQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="onlineorvosok.hu/orvosok/admin.php" DesignTimeRectangle="1753, 525, 20, 32" DesignTimeScaleFactor="0.800000011920929" FullSelectorArgument="&lt;webctrl parentid='el-collapse-head-118' tag='I' /&gt;" Guid="da1d3af4-cb04-4616-8fbb-f9afd62e27b4" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Appointments ‹ OnlineOrvosok — WordPress' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="2df9c501401e47b44bc314dcca6fe1a6.png" xmlns="">03rDc6RgMbkSpr8mNKPVg8g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

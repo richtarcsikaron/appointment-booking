@@ -1,0 +1,13 @@
+﻿{
+  "Name": " ‹ OnlineOrvosok — WordPre",
+  "Type": "Screen",
+  "Id": "dEGVkwtp2kyR2TPmmCN06w",
+  "Reference": "wBKoE0xw90CktorGcSwN5g/dEGVkwtp2kyR2TPmmCN06w",
+  "ParentRef": "wBKoE0xw90CktorGcSwN5g/erPekLM2MkyLrZnchu3-cA",
+  "Created": "2025-02-20T09:47:02.0224424Z",
+  "Updated": "2025-02-20T09:47:02.0224424Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

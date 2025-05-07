@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="QGzWkwsuvEuaXSCSlqcmDg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="onlineorvosok.hu/belepes.php" CVScreenId="da8ba667-ec51-454b-a0b7-5e141832cbdc" DesignTimeRectangle="860, 456, 216, 32" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='user_login' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='user_login' tag='INPUT' type='text' class='input' aaname='Felhasználónév, vagy e-mail cím' /&gt;" Guid="e0aa784f-bd88-4c70-9094-5624ea4b8efc" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bejelentkezés ‹ OnlineOrvosok — WordPress' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="da8ba667-ec51-454b-a0b7-5e141832cbdc" CvTextArea="859, 438, 159, 14" CvTextArgument="Felhasználónév, vagy e-mail cím" CvType="Text" DesignTimeRectangle="860, 437, 158, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Felhasználónév, vagy e-mail cím' check:innerText='Felhasználónév, vagy e-mail cím' /&gt;" Guid="ece8afa0-dcac-42be-af8a-2926d85a927d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="55f929fcb46f3e55d7132e7c0c43f5f1.png" xmlns="">0ryh1fetolEa4vHUqSLqSUw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

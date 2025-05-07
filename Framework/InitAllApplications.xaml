@@ -1,0 +1,326 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Initialize_Applications" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+    <x:Property Name="out_Browser" Type="OutArgument(ui:UiElement)" />
+    <x:Property Name="out_Pages" Type="OutArgument(sd:DataTable)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>396,292</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Initialization_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Management.Automation</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Management.Automation</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Open applications used in the process and do necessary initialization procedures (e.g., login)." DisplayName="Initialize All Applications" sap:VirtualizedContainerService.HintSize="1276,3502" sap2010:WorkflowViewState.IdRef="Sequence_9">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="1022,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Opening applications...&quot;]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="‹ OnlineOrvosok — WordPre" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1022,3275" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="IfNotOpen" OutUiElement="[out_Browser]" ScopeGuid="b277af48-88ed-44a7-9c2d-dc7832b5c219" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="988,3035" sap2010:WorkflowViewState.IdRef="Sequence_12">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Boolean" Name="BejelentkezesFound" />
+              <Variable x:TypeArguments="x:String" Name="LekérdDátum" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NCheckState DisplayName="Check App State 'Felhasználónév, vagy e-…'" Exists="[BejelentkezesFound]" sap:VirtualizedContainerService.HintSize="954,1626" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="b277af48-88ed-44a7-9c2d-dc7832b5c219" Version="V4">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,1377" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="UserName" />
+                    <Variable x:TypeArguments="ss:SecureString" Name="PassWord" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Starting Login...&quot;]" />
+                  <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[in_Config(&quot;LoginCr&quot;).ToString]" CacheStrategy="None" DisplayName="Get Credential" FolderPath="[in_Config(&quot;OrchestratorFolder&quot;).ToString]" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[PassWord]" Username="[UserName]" />
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Felhasználónév, vagy e-…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="DebuggerApi" ScopeIdentifier="b277af48-88ed-44a7-9c2d-dc7832b5c219" Text="[UserName]" Version="V4">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="onlineorvosok.hu/belepes.php" CVScreenId="1580dacd-4c58-4275-9664-14413731938f" CvElementArea="831, 381, 274, 44" CvType="InputBox" DesignTimeRectangle="833, 383, 270, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='user_login' tag='INPUT' type='text' class='input' aaname='Felhasználónév, vagy e-mail cím' /&gt;" Guid="5f759bdc-c180-4cf1-8336-ff983becf33c" InformativeScreenshot="3efaf43cb9d09c207c51d36472ba907c.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Bejelentkezés ‹ OnlineOrvosok — WordPress' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="1580dacd-4c58-4275-9664-14413731938f" DesignTimeRectangle="833, 359, 198, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Felhasználónév, vagy e-mail cím' check:innerText='Felhasználónév, vagy e-mail cím' /&gt;" Guid="aa543042-64a7-4748-afa0-25fca2d409ed" SearchSteps="Selector, FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Jelszó'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="DebuggerApi" IsPassword="True" ScopeIdentifier="b277af48-88ed-44a7-9c2d-dc7832b5c219" SecureText="[PassWord]" Version="V4">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="onlineorvosok.hu/belepes.php" CVScreenId="1580dacd-4c58-4275-9664-14413731938f" DesignTimeRectangle="833, 463, 270, 40" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='user_pass' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='user_pass' tag='INPUT' type='password' class='input password-input' aaname='Jelszó' /&gt;" Guid="65f64da2-c5e2-483b-82cc-92ffb4730e71" InformativeScreenshot="7c73d215626674b0e9f123075b93b056.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Bejelentkezés ‹ OnlineOrvosok — WordPress' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="1580dacd-4c58-4275-9664-14413731938f" CvTextArea="831, 443, 38, 13" CvTextArgument="Jelszó" CvType="Text" DesignTimeRectangle="833, 439, 36, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Jelszó' tag='LABEL' type='' class='' check:innerText='Jelszó' /&gt;" Guid="ee95b3ff-bd45-4334-8d9d-2ba6fd614436" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Bejelentkezés'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b277af48-88ed-44a7-9c2d-dc7832b5c219" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="onlineorvosok.hu/belepes.php" CVScreenId="1580dacd-4c58-4275-9664-14413731938f" DesignTimeRectangle="1000, 519, 103, 32" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='wp-submit' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='wp-submit' tag='INPUT' type='submit' class='button button-primary button-large' aaname='Bejelentkezés' check:text='Bejelentkezés' /&gt;" Guid="c53a546e-2c87-421f-8afd-6270206f9281" InformativeScreenshot="ebbe0f8a1cd34b809eccb349e74396dd.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Bejelentkezés ‹ OnlineOrvosok — WordPress' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="1580dacd-4c58-4275-9664-14413731938f" DesignTimeRectangle="857, 519, 99, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Emlékezzen rám' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Emlékezzen rám' tag='LABEL' type='' class='' check:innerText='Emlékezzen rám' /&gt;" Guid="5cec0984-62f0-4bb9-a250-230a755cd548" SearchSteps="Selector, FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="Label 'Label 'Előjegyzések 101 11''" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Target>
+                          <uix:TargetAnchorable BrowserURL="onlineorvosok.hu/orvosok/admin.php" CVScreenId="59adb07f-c4ec-490b-930a-eb4ebef17063" DesignTimeRectangle="337, 205, 222, 38" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='am-page-title' aaname='         Előjegyzések                  ' check:innerText='Előjegyzések 106 3' /&gt;" Guid="52db7d89-29c6-4034-9517-15b2fc92c967" InformativeScreenshot="0ca6c2f3efbf5d8a45807e8086ad386c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Appointments ‹ OnlineOrvosok — WordPress' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="59adb07f-c4ec-490b-930a-eb4ebef17063" DesignTimeRectangle="218, 210, 92, 28" ElementType="Icon" FullSelectorArgument="&lt;webctrl parentid='am-appointments' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='am-appointments' tag='IMG' type='' class='logo-big' aaname='' /&gt;" Guid="84e9331c-a4b0-4059-a903-1e4683a98207" SearchSteps="Selector, FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:VerifyExecutionOptions.Target>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Trace" Message="[&quot;Login Succed&quot;]" />
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,230" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Trace" Message="[&quot;Already Logged in&quot;]" />
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="onlineorvosok.hu/belepes.php" CVScreenId="9e2c1a4e-18fe-4c36-a2ae-9efd9c190678" DesignTimeRectangle="833, 423, 198, 21" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Felhasználónév, vagy e-mail cím' check:innerText='Felhasználónév, vagy e-mail cím' /&gt;" Guid="94f38a63-5c0a-47b2-baf8-c93a70a656d5" InformativeScreenshot="1c70c6d761a665afcbd235b50fb7e95a.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Bejelentkezés ‹ OnlineOrvosok — WordPress' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive" />
+              </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NCheckState>
+            <Assign sap:VirtualizedContainerService.HintSize="954,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[LekérdDátum]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[DateTime.Now.ToString("yyyy.MM.dd") + " - " + DateTime.Now.AddDays(30).ToString("yyyy.MM.dd")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DeselectAfter="True" DisplayName="Type Into Date" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="954,286" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="HardwareEvents" ScopeIdentifier="b277af48-88ed-44a7-9c2d-dc7832b5c219" Text="[LekérdDátum]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="onlineorvosok.hu/orvosok/admin.php" CVScreenId="58d4577d-ffc8-4439-bc67-ba9d039b7c52" DesignTimeRectangle="218, 355, 334, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl idx='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' tag='INPUT' class='el-input__inner' placeholder='YYYY.MM.DD. - YYYY.MM.DD.' aaname='' /&gt;" Guid="397813dd-4f3a-4fd3-a8c2-62b512f3795c" InformativeScreenshot="71e4a2b109019ccb45ae63f08c28f64d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Appointments ‹ OnlineOrvosok — WordPress' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="954,247" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="b277af48-88ed-44a7-9c2d-dc7832b5c219" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V4">
+              <uix:NKeyboardShortcuts.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NKeyboardShortcuts.VerifyOptions>
+            </uix:NKeyboardShortcuts>
+            <uix:NCheckState DisplayName="Check App State '1234'" sap:VirtualizedContainerService.HintSize="954,700" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="b277af48-88ed-44a7-9c2d-dc7832b5c219" Timeout="10" Version="V4">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,460" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NExtractData AppendResults="False" ContinueOnError="False" DataTable="[out_Pages]" DelayBefore="5" DisplayName="Extract Table Data 'Extract Table Data'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='false' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Pages'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="b277af48-88ed-44a7-9c2d-dc7832b5c219" Version="V4">
+                    <uix:NExtractData.Target>
+                      <uix:TargetAnchorable BrowserURL="https://onlineorvosok.hu/orvosok/admin.php?page=wpamelia-appointments#/appointments" DesignTimeRectangle="1702, 592, 142, 32" DesignTimeScaleFactor="1" ElementType="List" FullSelectorArgument="&lt;webctrl class='el-pager' parentid='am-appointments' tag='UL' /&gt;" Guid="5f8edf6d-4d5b-4cdc-888c-50172f24353b" InformativeScreenshot="ed1d948012cc6aeae2dd9123863a251b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Appointments ‹ OnlineOrvosok — WordPress' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+                    </uix:NExtractData.Target>
+                  </uix:NExtractData>
+                  <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Status" DataTable="[out_Pages]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="416,211" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1" />
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,177" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Throw Exception="[new SystemException(&quot;Lap navigáció nem jelent meg &quot;)]" sap:VirtualizedContainerService.HintSize="416,115" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="onlineorvosok.hu/orvosok/admin.php" ContentHash="1w5iLTtpdEKQFIQHSgaqsw" DesignTimeRectangle="772, 584, 1108, 40" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='el-pagination' parentid='am-appointments' tag='DIV' type='' aaname='' /&gt;" Guid="d1b90e3b-df3d-449b-96b0-d441768c8b91" InformativeScreenshot="cca835ee2f793afa1b15ff31d5ff00e1.png" Reference="wBKoE0xw90CktorGcSwN5g/781CMeUbYEqADyAoFSCneg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Appointments ‹ OnlineOrvosok — WordPress' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive" />
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="2552, -8, 1936, 1048" BrowserType="Edge" ContentHash="uwwhqhPeFUmhuvdIQjdJQQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAO7SURBVFhHlZe7axRRFMYnja2gfbo0Yq92NhKQYKGVjUE0JjEhvhAbJRYJabQIBNO4CAYD2byUaFZMVESxSCIGBJGYQv0HQrCyGu/v7J7ZO3fOzM4WHzNzZvZ83z2vezfqvt5TGtHgiwPR1ZfHo+Ha7ah/edqh2sC0s49FA8/PuHeHrd/mwTSGEFJIRtb2oqFaLOhfFnRcqNRxabaOK/NxR1/1DWIsXyFMo8IRd8oKr63HCRw5JEfurQqO3Z0XZEQ4RP1Lm4i3fCtMI4iGXvXKigNyVt15azGe+/wzflD7nuDk+EpTRENAU4iLnkufyWMaybFPHAhg5b1TNcHpiSXBiTtPcwUISIshIvUghjxy4AlgxQgYnf1QTgAwRKTJqWKLWNHIPykg7zPrX+Ltnd/x2dFKOQEOpCPFmdy49snkPERDQNeNZ0K68vGr4ObUgtjKCAB+hzQFUCgWqQ9PAOHf2/8bv9/elUh0DTwqL2D49Y6mok5Ou42s/TNJfRgCVjd+tC2Ab+gyX8CYSRjCq4HJlU3JPxFARNkaUDAjmgIIiUUYwgmgCyDRAQRxMojaEAAk8lJ8FlkeVAROIFPiNsmBDLui1rs4sy1T7uj4J8GpqY24++E7uR94UrdByj2zgevB4QWZDVzvL24JuDcFUPiiwiDH4e6vP9JijN1zk+uScxyer2xJ+3HF0duNbyIMG8XJdxQqv5fiDIgVTkA1d/IhAEc4ptAQQNVjg5jCswTwrS+AqITECZiM7QiAABEqgBThyBdAS8rKS0SgLiAnBbQaDgi5poDWgwxiBFAfCPUFMCF9AdgLasClgMOGIYBKxxk1gBgcsgHRdpDqO1qQe95zPXS5klwHJx4LcgUwf4rakFADCFk1XQC0K7DxHgJyjVBWrN3APZGzyIF0oAwiTi4BOc4IKcAJrUXYuZIWSHgm/FQ+6SFCPPMNv+E9NWGRA1l8fRJmCxEB5B4HEOAYEhxTnJDxHoGEn+98AfxGa8gipwC9UZzdigmhrlAjAKEWJ+/pDt5zIEEA32gnqA0flgDdkkWA3BgbEi3E6iAD3FOccnUjWd7TZo29Qb7xbFq8GfLGRpQWwJk/2JS02IpAgbZCRoB3Uk4EyAMt6Z0LtOqLQKW3Qorc1VuK038QQ85gyoXujCXA4MnwhQYxIqLMCQmUFOC+M/8bpB58SDrKHFRaCeir7odh92EaFdKedEdRNIoEsNm4U4/lW2EaQyRCrIiEAlgx4W7xn1BhGovAimSGMz0RpaBuSpI20RP9B/KKEURf30hvAAAAAElFTkSuQmCC" InformativeScreenshot="898049cc96a6038a584d677d96c7a01f.jpg" Reference="wBKoE0xw90CktorGcSwN5g/dEGVkwtp2kyR2TPmmCN06w" Selector="&lt;html app='msedge.exe' title='Bejelentkezés ‹ OnlineOrvosok — WordPress' /&gt;" Url="https://onlineorvosok.hu/belepes.php?redirect_to=https%3A%2F%2Fonlineorvosok.hu%2Forvosok%2Fadmin.php%3Fpage%3Dwpamelia-appointments&amp;reauth=1#/appointments" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

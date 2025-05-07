@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Jóváhagyva",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "hiD9zep7skSTQa5-Pxt6rg",
+  "Reference": "wBKoE0xw90CktorGcSwN5g/hiD9zep7skSTQa5-Pxt6rg",
+  "ParentRef": "wBKoE0xw90CktorGcSwN5g/RSYBvixd3EesR5xhDK08rA",
+  "Created": "2025-02-20T08:45:10.6000269Z",
+  "Updated": "2025-02-20T08:45:10.6000269Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

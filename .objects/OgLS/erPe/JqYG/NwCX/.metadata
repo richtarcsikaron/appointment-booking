@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Jelszó",
+  "Type": "Element",
+  "TaxonomyType": "Password",
+  "Id": "NwCX1XPE7EyIpgVkRx6Crw",
+  "Reference": "wBKoE0xw90CktorGcSwN5g/NwCX1XPE7EyIpgVkRx6Crw",
+  "ParentRef": "wBKoE0xw90CktorGcSwN5g/JqYG3G6-ckSehmOnpY_Ltg",
+  "Created": "2025-02-10T14:47:19.1157317Z",
+  "Updated": "2025-02-10T14:47:19.1157317Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

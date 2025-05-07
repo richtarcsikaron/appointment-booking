@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Chrome Appointments ‹ OnlineOrvosok — WordPre",
+  "Type": "Screen",
+  "Id": "JqYG3G6-ckSehmOnpY_Ltg",
+  "Reference": "wBKoE0xw90CktorGcSwN5g/JqYG3G6-ckSehmOnpY_Ltg",
+  "ParentRef": "wBKoE0xw90CktorGcSwN5g/erPekLM2MkyLrZnchu3-cA",
+  "Created": "2025-02-10T14:33:34.274579Z",
+  "Updated": "2025-02-10T15:16:00.3020048Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
